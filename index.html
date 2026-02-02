@@ -17,6 +17,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.3/new.min.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png" />
+    <style>
+        .two-column {
+            column-count: 2;
+            column-gap: 2rem;
+        }
+
+        .two-column li {
+            break-inside: avoid;
+            -webkit-column-break-inside: avoid;
+        }
+
+        @media (max-width: 700px) {
+            .two-column {
+                column-count: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,7 +49,7 @@
         </header>
         <h2>Staff Research Scientist</h2>
         <h3>About Me</h3>
-        <p> I'm currently a Research Scientist at Visa Research, in the <a href="https://usa.visa.com/about-visa/visa-research/people.html#535c0e54fc">Advanced Cryptography team.</a></p>
+        <p> I'm currently a Research Scientist at Visa Research, in the <a href="https://usa.visa.com/about-visa/visa-research/people.html#ab056c37c1">Trustworthy AI team.</a> My work revolves around designing frameworks to understand the security and privacy issues that can emerge in agentic systems, in settings such as agentic commerce.</p>
         <p>Previously, I was a PhD student in the <a href="https://www.cs.au.dk/~orlandi/cryptogroup/">Crypto Group</a> from 2019 to 2022 at <a href="https://international.au.dk/">Aarhus University, Denmark</a> under <a href="https://pascholl.github.io/">Prof. Peter Scholl</a> and <a href="https://cs.au.dk/~orlandi/">Prof. Claudio Orlandi</a>. My research was mainly focused on building protocols for Secure Multiparty Computation for different use cases. More specifically, my work was geared towards the domain of Privacy-Preserving Machine Learning.</p>
         <p>I received my iMTech (BTech + MTech) degree in Information Technology from <a href="iiitb.ac.in/">International Insitute of Information Technology, Bangalore</a> in 2019. As a part of my thesis, I worked on building an efficient framework to perform Privacy-Preserving Machine Learning using Secure Multiparty Computation. I worked under the guidance of <a href="https://sites.google.com/site/ashishcrypto/">Prof. Ashish Choudhury</a>, along with members of the <a href="https://www.csa.iisc.ac.in/~cris/">CrIS Lab</a>.</p>
                 <details>
@@ -50,21 +67,30 @@
                 <li>
                     <span style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
-                            <h5><a href="#"></a>SLVR: Securely Leveraging Client Validation Data for Robust Federated Learning</a></h5>
-                            <p style="margin-bottom: 0;">Jihye Choi, Somesh Jha, Rahul Rachuri, Yizhen Wang</p>
+                            <h5><a href="https://eprint.iacr.org/2025/1828">Block-Accumulate Codes: Accelerated Linear Codes for PCGs and ZK</a></h5>
+                            <p style="margin-bottom: 0;">Vladimir Kolesnikov, Stanislav Peceny, Rahul Rachuri, Srinivasan Raghuraman, Peter Rindal, Harshal Shah</p>
                             <p>In Submission</p>
                         </div>
                     </span>
-                </li>        
+                </li>                
                 <li>
                     <span style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
-                            <h5><a href="#"></a>Is Passive Security Reasonable in Privacy-Preserving Machine Learning?</a></h5>
+                            <h5><a href="https://arxiv.org/abs/2505.17092">Covert Attacks on Machine Learning Training in Passively Secure MPC</a></h5>
                             <p style="margin-bottom: 0;">Matthew Jagielski, Rahul Rachuri, Peter Scholl</p>
                             <p>In Submission</p>
                         </div>
                     </span>
                 </li>
+                <li>
+                    <span style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <h5><a href="https://arxiv.org/abs/2502.08055">SLVR: Securely Leveraging Client Validation Data for Robust Federated Learning</a></h5>
+                            <p style="margin-bottom: 0;">Jihye Choi, Somesh Jha, Rahul Rachuri, Yizhen Wang</p>
+                            <p></p>
+                        </div>
+                    </span>
+                </li>        
                 <li>
                     <span style="display: flex; justify-content: space-between; align-items: center;">
                         <div>
@@ -213,9 +239,14 @@
                 </li>
             </ul>
         <h5>Professional Service</h5>
-            <h6>As external reviewer</h6>
+            <h6>As Program Committee</h6>
             <ul>
-                <li>2025 Eurocrypt, PKC, Crypto</li>
+                <li>2026 AsiaCCS</li>
+            </ul>
+            <h6>As external reviewer</h6>
+            <ul class="two-column">
+                <li>2026 PKC</li>
+                <li>2025 Eurocrypt, Crypto, PKC, TCC</li>
                 <li>2024 Eurocrypt</li>
                 <li>2023 ACNS, ITC, PETS, TDSC</li>
                 <li>2022 Asiacrypt, CANS, Eurocrypt, PETS</li>
